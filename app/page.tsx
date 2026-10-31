@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#f2eee6] text-[#1e3028]">
       <header className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 lg:px-10">
-        <Link href="/" aria-label="Living Earth — home" className="font-serif text-xl font-semibold tracking-tight text-[#e4c9a7]">Living Earth</Link>
+        <Link href="/" aria-label="Terra Viva — home" className="font-serif text-xl font-semibold tracking-tight text-[#e4c9a7]">Terra Viva</Link>
         <nav className="hidden items-center gap-8 text-sm text-[#52625a] md:flex">
           <Link className="transition-colors hover:text-[#1e3028]" href="/about">About</Link>
           <Link className="transition-colors hover:text-[#1e3028]" href="#processes">Earth processes</Link>
@@ -57,7 +57,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-xs text-[#52625a] md:flex-row md:items-center md:justify-between lg:px-10"><span>Living Earth · Brazil</span><span>Earth science project · 2026</span></footer>
+      <footer className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-xs text-[#52625a] md:flex-row md:items-center md:justify-between lg:px-10"><span>Terra Viva · Brazil</span><span>Earth science project · 2026</span></footer>
     </main>
   )
 }

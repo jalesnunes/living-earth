@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Living Earth · Brazil',
+  title: 'Terra Viva · Brazil',
   description: "An earth science field guide to Brazil's living forces and physical geography.",
 }
 

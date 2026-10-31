@@ -1,0 +1,6 @@
+import Link from 'next/link'
+import { ArrowLeft } from 'lucide-react'
+
+export default function ReferencesPage() {
+  return <main className="min-h-screen bg-[#f2eee6] text-[#1e3028]"><header className="mx-auto flex max-w-5xl items-center justify-between px-6 py-8"><Link href="/" className="font-serif text-xl">Living Earth<span className="text-[#b46c45]">.</span></Link><Link href="/" className="flex items-center gap-2 text-sm text-[#52625a]"><ArrowLeft size={16}/> Back home</Link></header><section className="mx-auto max-w-5xl px-6 pb-24 pt-16"><p className="text-xs font-semibold uppercase tracking-[.24em] text-[#b46c45]">Research library</p><h1 className="mt-5 font-serif text-7xl tracking-[-.04em]">References<span className="text-[#b46c45]">.</span></h1><div className="mt-16 border-t border-[#1e3028]/15 pt-8"><p className="max-w-xl text-lg leading-8 text-[#52625a]">Trusted sources will be collected and formatted in alphabetical APA style as each research section is completed.</p><div className="mt-12 rounded-2xl bg-[#e6e7d8] p-8"><p className="font-mono text-xs uppercase tracking-[.16em] text-[#b46c45]">Placeholder · Week 1</p><p className="mt-5 font-serif text-2xl">Sources for Brazil&apos;s maps, location, and cartographers will be added here.</p></div></div></section></main>
+}

@@ -1,7 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 48" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 64" role="img" aria-labelledby="title desc">
   <title id="title">Living Earth</title>
-  <desc id="desc">Living Earth wordmark</desc>
-  <text x="0" y="35" fill="#e4c9a7" font-family="Georgia, 'Times New Roman', serif" font-size="32" letter-spacing="-1.2">Living</text>
-  <text x="112" y="35" fill="#b46c45" font-family="Georgia, 'Times New Roman', serif" font-size="32" letter-spacing="-1.2">Earth</text>
-  <circle cx="294" cy="29" r="4" fill="#b46c45"/>
+  <desc id="desc">Living Earth wordmark in earth brown and terracotta</desc>
+  <text x="0" y="48" fill="#6f4632" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="600" letter-spacing="-2">Living</text>
+  <text x="188" y="48" fill="#b46c45" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="600" letter-spacing="-2">Earth</text>
 </svg>

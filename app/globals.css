@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Serif+Display:ital@0;1&display=swap');
 @import 'tailwindcss';
 @import 'tw-animate-css';
 @import 'shadcn/tailwind.css';
@@ -159,5 +160,8 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: Arial, sans-serif;
   }
+  .font-serif { font-family: 'DM Serif Display', Georgia, serif; }
+  .font-mono { font-family: 'DM Mono', monospace; }
 }

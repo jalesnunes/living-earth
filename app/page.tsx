@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#f2eee6] text-[#1e3028]">
       <header className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 lg:px-10">
-        <Link href="/" className="font-serif text-xl tracking-tight">Living Earth<span className="text-[#b46c45]">.</span></Link>
+        <Link href="/" aria-label="Living Earth — home" className="inline-flex items-center"><img src="/living-earth-logo.svg" alt="Living Earth" className="h-8 w-auto" /></Link>
         <nav className="hidden items-center gap-8 text-sm text-[#52625a] md:flex">
           <Link className="transition-colors hover:text-[#1e3028]" href="/about">About</Link>
           <Link className="transition-colors hover:text-[#1e3028]" href="#processes">Earth processes</Link>

@@ -22,16 +22,28 @@ export default function Home() {
         <button className="rounded-full border border-[#1e3028]/15 p-2 md:hidden" aria-label="Open navigation"><Menu /></button>
       </header>
 
-      <section className="mx-auto grid max-w-7xl gap-10 px-6 pb-20 pt-12 lg:grid-cols-[1.05fr_.95fr] lg:items-end lg:px-10 lg:pb-28 lg:pt-20">
-        <div>
-          <p className="mb-7 text-xs font-semibold uppercase tracking-[0.24em] text-[#b46c45]">Earth science · Brazil</p>
-          <h1 className="max-w-3xl font-serif text-6xl leading-[.94] tracking-[-.045em] sm:text-7xl lg:text-[7.5rem]">A country shaped by <em className="text-[#b46c45]">living</em> forces.</h1>
-          <p className="mt-8 max-w-lg text-lg leading-8 text-[#52625a]">An exploration of Brazil&apos;s landscapes, systems, and the geologic stories written across its vast territory.</p>
-          <Link href="/about" className="mt-9 inline-flex items-center gap-2 border-b border-[#1e3028] pb-2 text-sm font-semibold">Explore the project <ArrowUpRight size={16} /></Link>
-        </div>
-        <div className="relative overflow-hidden rounded-[2rem] bg-[#c9d0bd]">
-          <img src="/brazil-landscape.png" alt="Brazilian rainforest and coastline at golden hour" className="aspect-[4/5] w-full object-cover lg:aspect-[4/4.7]" />
-          <div className="absolute bottom-5 left-5 rounded-full bg-[#f2eee6]/90 px-4 py-2 text-xs tracking-wide backdrop-blur">Brazil · South America</div>
+      <section className="px-4 pb-8 pt-2 sm:px-6 lg:px-8">
+        <div className="relative isolate min-h-[calc(100vh-7rem)] overflow-hidden rounded-[1.75rem] bg-[#3f2c22] text-[#f5eee2] sm:min-h-[690px] lg:min-h-[760px]">
+          <img src="/belem-hero.png" alt="Belém do Pará waterfront and Amazonian vegetation at golden hour" className="absolute inset-0 -z-20 size-full object-cover" />
+          <div className="absolute inset-0 -z-10 bg-gradient-to-r from-[#261913]/90 via-[#3a271e]/55 to-[#3a271e]/10" />
+          <div className="absolute inset-0 -z-10 bg-gradient-to-t from-[#261913]/80 via-transparent to-[#261913]/10" />
+          <div className="flex min-h-[calc(100vh-7rem)] flex-col justify-between p-7 sm:min-h-[690px] sm:p-10 lg:min-h-[760px] lg:p-14">
+            <div className="flex items-start justify-between gap-6 text-xs uppercase tracking-[0.2em] text-[#e4c9a7]">
+              <span>Earth science · Brazil</span>
+              <span className="hidden sm:block">Issue 01 / 2026</span>
+            </div>
+            <div className="max-w-4xl">
+              <h1 className="font-serif text-6xl leading-[.9] tracking-[-.045em] sm:text-8xl lg:text-[9rem]">A country shaped by <em className="text-[#e4c9a7]">living</em> forces.</h1>
+              <div className="mt-8 flex flex-col gap-7 sm:flex-row sm:items-end sm:justify-between">
+                <p className="max-w-md text-base leading-7 text-[#f0e4d2]/85 sm:text-lg">An exploration of Brazil&apos;s landscapes, systems, and the geologic stories written across its vast territory.</p>
+                <Link href="#processes" className="inline-flex w-fit items-center gap-2 border-b border-[#f5eee2]/60 pb-2 text-sm font-semibold text-[#f5eee2] transition-colors hover:border-[#e4c9a7] hover:text-[#e4c9a7]">Explore the field notes <ArrowUpRight size={16} /></Link>
+              </div>
+            </div>
+            <div className="flex items-end justify-between gap-4 border-t border-[#f5eee2]/30 pt-4 text-[10px] uppercase tracking-[0.16em] text-[#f0e4d2]/80 sm:text-xs">
+              <span>Belém do Pará, Brazil</span>
+              <span className="text-right">1°27&apos;21&quot; S<br className="sm:hidden" /> · 48°30&apos;16&quot; W</span>
+            </div>
+          </div>
         </div>
       </section>
 

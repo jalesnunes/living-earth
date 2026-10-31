@@ -1,6 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 64" role="img" aria-labelledby="title desc">
+<svg width="184" height="52" viewBox="0 0 184 52" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Living Earth</title>
-  <desc id="desc">Living Earth wordmark in earth brown and terracotta</desc>
-  <text x="0" y="48" fill="#6f4632" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="600" letter-spacing="-2">Living</text>
-  <text x="188" y="48" fill="#b46c45" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="600" letter-spacing="-2">Earth</text>
+  <desc id="desc">A terracotta leaf containing a simplified map of Brazil beside the Living Earth wordmark.</desc>
+  <g transform="translate(2 2)">
+    <path d="M24.7 45.8C10.8 42.2 3.1 32.8 5.8 19.2C7.8 9.3 15.3 3.8 27.9 2.1C36.3 1 42.4 3.4 47.2 7.1C45.5 21 38.4 34.6 24.7 45.8Z" fill="#B65E3C"/>
+    <path d="M9 41.8C20.1 30.8 29.7 20.2 40.8 6.1" stroke="#EBD9C3" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M28.7 14.2L34.9 16.9L37.1 22.4L34.4 26.6L35.7 31.9L31.1 36.1L25.4 34.8L21.5 31.1L16.8 30.3L14.7 25.7L17 22.2L18.4 17.3L23.1 16.4L26.3 12.4L28.7 14.2Z" fill="#F5EBDD" stroke="#82513A" stroke-width="1.1" stroke-linejoin="round"/>
+    <path d="M21.4 18.1L25.1 21.3L30 21.1L34.8 25.9M18.1 25L23.1 25.5L26.8 29.7L31.1 28.2" stroke="#B65E3C" stroke-width="1" stroke-linecap="round" opacity=".7"/>
+  </g>
+  <text x="59" y="27" fill="#F5EBDD" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-weight="700" letter-spacing="-.6">Living</text>
+  <text x="126" y="27" fill="#D78A61" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-weight="700" letter-spacing="-.6">Earth</text>
+  <path d="M60 35H178" stroke="#B65E3C" stroke-width="1.5" stroke-linecap="round" opacity=".85"/>
 </svg>

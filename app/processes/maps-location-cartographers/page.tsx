@@ -211,7 +211,7 @@ export default function MapsLocationCartographersPage() {
               <div className="grid gap-6 sm:grid-cols-[180px_1fr]">
                 <figure>
                   <img
-                    src="https://www25.senado.leg.br/senadores-portlet/img/senador-portrait.png"
+                    src="/maps/Candido_Mendes.png"
                     alt="Portrait of Cândido Mendes de Almeida"
                     loading="lazy"
                     className="aspect-[4/5] w-full rounded-xl bg-[#d7cbbb] object-cover"

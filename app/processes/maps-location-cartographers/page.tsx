@@ -1,68 +1,69 @@
-import Link from 'next/link'
-import { ArrowLeft, ArrowUpRight } from 'lucide-react'
+import Link from "next/link";
+import { ArrowLeft, ArrowUpRight } from "lucide-react";
 
 const maps = [
   {
-    number: '01',
-    title: 'Brazil in South America',
-    type: 'pdf',
-    src: 'https://educa.ibge.gov.br/images/mapas/pdf/continentes-e-regioes-do-mundo-america-do-sul-politico-p-47.pdf',
-    alt: 'IBGE political map of South America',
+    number: "01",
+    title: "Brazil in South America",
+    type: "pdf",
+    src: "https://educa.ibge.gov.br/images/mapas/pdf/continentes-e-regioes-do-mundo-america-do-sul-politico-p-47.pdf",
+    alt: "IBGE political map of South America",
     description:
-      'This map places Brazil in eastern and central South America, along the Atlantic coast. It also shows neighboring countries, the Equator, and the Tropic of Capricorn.',
-    projection: 'Cylindrical Equidistant Meridional projection.',
+      "This map places Brazil in eastern and central South America, along the Atlantic coast. It also shows neighboring countries, the Equator, and the Tropic of Capricorn.",
+    projection: "Cylindrical Equidistant Meridional projection.",
     source:
-      'https://educa.ibge.gov.br/images/mapas/pdf/continentes-e-regioes-do-mundo-america-do-sul-politico-p-47.pdf',
+      "https://educa.ibge.gov.br/images/mapas/pdf/continentes-e-regioes-do-mundo-america-do-sul-politico-p-47.pdf",
   },
   {
-    number: '02',
-    title: 'Extreme points and geographic extent',
-    type: 'pdf',
-    src: 'https://educa.ibge.gov.br/images/7a12/mapas/Brasil/mapa_pontos-extremosfronteiras.pdf',
-    alt: 'IBGE map showing Brazil’s extreme points, borders, and lines of latitude',
+    number: "02",
+    title: "Extreme points and geographic extent",
+    type: "pdf",
+    src: "https://educa.ibge.gov.br/images/7a12/mapas/Brasil/mapa_pontos-extremosfronteiras.pdf",
+    alt: "IBGE map showing Brazil’s extreme points, borders, and lines of latitude",
     description:
-      'The map identifies Brazil’s northern, southern, eastern, and western extreme points. The Equator and Tropic of Capricorn help show how far the country extends across tropical and temperate latitudes.',
-    projection: 'Polyconic projection.',
+      "The map identifies Brazil’s northern, southern, eastern, and western extreme points. The Equator and Tropic of Capricorn help show how far the country extends across tropical and temperate latitudes.",
+    projection: "Polyconic projection.",
     source:
-      'https://educa.ibge.gov.br/images/7a12/mapas/Brasil/mapa_pontos-extremosfronteiras.pdf',
+      "https://educa.ibge.gov.br/images/7a12/mapas/Brasil/mapa_pontos-extremosfronteiras.pdf",
   },
   {
-    number: '03',
-    title: 'Brazil’s current political divisions',
-    type: 'pdf',
-    src: 'https://www.ibge.gov.br/biblioteca/visualizacao/periodicos/2/bn_2023_v31_art02.pdf#page=63',
-    alt: 'IBGE political map of Brazil showing state boundaries',
+    number: "03",
+    title: "Brazil’s political divisions (2023)",
+    type: "image",
+    src: "/maps/brazil-political-2023.png",
+    alt: "IBGE political map of Brazil showing state boundaries, cities, and transportation routes",
     description:
-      'This modern political map shows Brazil’s states, the Federal District, cities, and transportation routes. It gives a current reference for comparing today’s political organization with historical maps.',
-    projection: 'Polyconic projection; SIRGAS 2000 horizontal datum.',
+      "This modern political map shows Brazil’s states, the Federal District, cities, and transportation routes.",
+    projection: "Polyconic projection; SIRGAS 2000 horizontal datum.",
     source:
-      'https://www.ibge.gov.br/biblioteca/visualizacao/periodicos/2/bn_2023_v31_art02.pdf',
+      "https://www.ibge.gov.br/geociencias/todos-os-produtos-geociencias/15816-politico.html",
   },
   {
-    number: '04',
-    title: 'The Empire of Brazil in 1868',
-    type: 'image',
-    src: 'https://media.davidrumsey.com/MediaManager/srvr?mediafile=%2FSize3%2FRUMSEY~8~1%2F179%2F11946024.jpg',
-    alt: '1868 map of the Empire of Brazil showing electoral divisions, rivers, and mountains',
+    number: "04",
+    title: "The Empire of Brazil in 1868",
+    type: "image",
+    src: "/maps/empire-brazil-1868.png",
+    alt: "1868 map of the Empire of Brazil showing its provinces and electoral divisions",
     description:
-      'Created by Cândido Mendes de Almeida, this map shows the Empire’s electoral divisions and includes information about provinces, settlements, rivers, and mountains.',
-    projection: 'The collection record does not specify a map projection.',
+      "Created by Cândido Mendes de Almeida, this historical map shows the Empire’s provinces and electoral divisions.",
+    projection: "The collection record does not specify a map projection.",
     source:
-      'https://www.davidrumsey.com/luna/servlet/detail/RUMSEY~8~1~305746~90076441:II-B--Imperio-do-Brazil--Divisao-El',
+      "https://www.davidrumsey.com/luna/servlet/detail/RUMSEY~8~1~305746~90076441:II-B--Imperio-do-Brazil--Divisao-El",
   },
   {
-    number: '05',
-    title: 'Changes in Brazil’s territorial divisions, 1872–2010',
-    type: 'pdf',
-    src: 'https://geoftp.ibge.gov.br/organizacao_do_territorio/estrutura_territorial/evolucao_da_divisao_territorial_do_brasil/evolucao_da_divisao_territorial_do_brasil_1872_2010/evolucao_da_divisao_territorial_mapas.pdf',
-    alt: 'IBGE historical map series showing changes in Brazil’s territorial divisions',
+    number: "05",
+    title: "Changes in Brazil’s territorial divisions, 1872–2010",
+    type: "pdf",
+    src: "https://geoftp.ibge.gov.br/organizacao_do_territorio/estrutura_territorial/evolucao_da_divisao_territorial_do_brasil/evolucao_da_divisao_territorial_do_brasil_1872_2010/evolucao_da_divisao_territorial_mapas.pdf",
+    alt: "IBGE historical map series showing changes in Brazil’s territorial divisions",
     description:
-      'This IBGE map series follows changes in state and municipal divisions from 1872 to 2010. It helps show how the political map changed as Brazil’s administrative organization developed.',
-    projection: 'The series contains maps from different years; check each map’s notes for projection details.',
+      "This IBGE map series follows changes in state and municipal divisions from 1872 to 2010. It helps show how the political map changed as Brazil’s administrative organization developed.",
+    projection:
+      "The series contains maps from different years; check each map’s notes for projection details.",
     source:
-      'https://www.ibge.gov.br/geociencias/organizacao-do-territorio/estrutura-territorial/15771-evolucao-da-divisao-territorial-do-brasil.html',
+      "https://www.ibge.gov.br/geociencias/organizacao-do-territorio/estrutura-territorial/15771-evolucao-da-divisao-territorial-do-brasil.html",
   },
-]
+];
 
 export default function MapsLocationCartographersPage() {
   return (
@@ -88,9 +89,9 @@ export default function MapsLocationCartographersPage() {
           Maps, location, and cartographers.
         </h1>
         <p className="mt-8 max-w-2xl text-lg leading-8 text-[#52625a]">
-          Maps show Brazil at different scales and moments in time: its
-          position in South America, its geographic extent, its present-day
-          political divisions, and the changing boundaries of its territory.
+          Maps show Brazil at different scales and moments in time: its position
+          in South America, its geographic extent, its present-day political
+          divisions, and the changing boundaries of its territory.
         </p>
       </section>
 
@@ -115,7 +116,7 @@ export default function MapsLocationCartographersPage() {
               </h2>
 
               <div className="mx-6 mt-5 overflow-hidden rounded-xl border border-[#1e3028]/10 bg-white">
-                {map.type === 'image' ? (
+                {map.type === "image" ? (
                   <img
                     src={map.src}
                     alt={map.alt}
@@ -137,7 +138,7 @@ export default function MapsLocationCartographersPage() {
                   {map.description}
                 </p>
                 <p className="text-xs leading-5 text-[#52625a]">
-                  <strong className="text-[#1e3028]">Projection:</strong>{' '}
+                  <strong className="text-[#1e3028]">Projection:</strong>{" "}
                   {map.projection}
                 </p>
                 <a
@@ -182,10 +183,10 @@ export default function MapsLocationCartographersPage() {
                 02 · Latitudinal range
               </h3>
               <p className="max-w-2xl leading-7 text-[#52625a]">
-                The Brazilian mainland extends from 5°16′19″ N at the source
-                of the Ailã River in Roraima to 33°45′04″ S at Arroio Chuí in
-                Rio Grande do Sul. These IBGE coordinates exclude oceanic
-                islands (IBGE, 2023).
+                The Brazilian mainland extends from 5°16′19″ N at the source of
+                the Ailã River in Roraima to 33°45′04″ S at Arroio Chuí in Rio
+                Grande do Sul. These IBGE coordinates exclude oceanic islands
+                (IBGE, 2023).
               </p>
             </div>
 
@@ -194,11 +195,11 @@ export default function MapsLocationCartographersPage() {
                 03 · Years and political periods
               </h3>
               <p className="max-w-2xl leading-7 text-[#52625a]">
-                Brazil proclaimed independence in 1822 and became the Empire
-                of Brazil. The Empire ended when the Republic was proclaimed
-                in 1889; Brazil has been a republic since then. Portugal
-                formally recognized Brazilian independence in 1825 (IBGE,
-                2011; Ministério das Relações Exteriores, 1825).
+                Brazil proclaimed independence in 1822 and became the Empire of
+                Brazil. The Empire ended when the Republic was proclaimed in
+                1889; Brazil has been a republic since then. Portugal formally
+                recognized Brazilian independence in 1825 (IBGE, 2011;
+                Ministério das Relações Exteriores, 1825).
               </p>
             </div>
 
@@ -227,23 +228,23 @@ export default function MapsLocationCartographersPage() {
                   <p className="mt-4 leading-7 text-[#52625a]">
                     Mendes was a Brazilian lawyer, professor, public servant,
                     and politician from Maranhão. He taught history and
-                    geography and organized the{' '}
+                    geography and organized the{" "}
                     <em>Atlas do Império do Brazil</em> in 1868. The atlas
-                    brought together maps of the provinces and information
-                    about administrative, electoral, ecclesiastical, and
-                    judicial divisions, as well as rivers, mountains, and
-                    population. It is considered a landmark in Brazilian
-                    cartography and was used as a reference for later works
-                    (Câmara dos Deputados, n.d.; Senado Federal, n.d.).
+                    brought together maps of the provinces and information about
+                    administrative, electoral, ecclesiastical, and judicial
+                    divisions, as well as rivers, mountains, and population. It
+                    is considered a landmark in Brazilian cartography and was
+                    used as a reference for later works (Câmara dos Deputados,
+                    n.d.; Senado Federal, n.d.).
                   </p>
                   <p className="mt-4 leading-7 text-[#52625a]">
                     One major accomplishment was organizing a broad national
                     atlas at a time when Brazil’s internal and international
                     boundaries were still being defined. The 1868 map above
                     shows how cartography recorded the Empire’s political
-                    organization, while also reflecting the limits of
-                    geographic knowledge at that time (Câmara dos Deputados,
-                    n.d.; Mendes, 1868).
+                    organization, while also reflecting the limits of geographic
+                    knowledge at that time (Câmara dos Deputados, n.d.; Mendes,
+                    1868).
                   </p>
                 </div>
               </div>
@@ -260,8 +261,8 @@ export default function MapsLocationCartographersPage() {
 
         <ol className="mt-8 space-y-5 text-sm leading-6 text-[#52625a]">
           <li className="border-t border-[#1e3028]/10 pt-4">
-            Câmara dos Deputados. (n.d.).{' '}
-            <em>Atlas do Império do Brazil</em> [Digital collection].{' '}
+            Câmara dos Deputados. (n.d.). <em>Atlas do Império do Brazil</em>{" "}
+            [Digital collection].{" "}
             <a
               className="underline"
               href="https://bd.camara.leg.br/bd/items/703dc909-1fca-41fb-b75c-f7b045c94b75"
@@ -273,7 +274,7 @@ export default function MapsLocationCartographersPage() {
           </li>
 
           <li>
-            IBGE. (n.d.). <em>South America: Political</em> [Map]. Educa IBGE.{' '}
+            IBGE. (n.d.). <em>South America: Political</em> [Map]. Educa IBGE.{" "}
             <a
               className="underline"
               href="https://educa.ibge.gov.br/images/mapas/pdf/continentes-e-regioes-do-mundo-america-do-sul-politico-p-47.pdf"
@@ -285,9 +286,9 @@ export default function MapsLocationCartographersPage() {
           </li>
 
           <li>
-            IBGE. (2011).{' '}
-            <em>Evolução da divisão territorial do Brasil: 1872–2010</em>{' '}
-            [Map series].{' '}
+            IBGE. (2011).{" "}
+            <em>Evolução da divisão territorial do Brasil: 1872–2010</em> [Map
+            series].{" "}
             <a
               className="underline"
               href="https://www.ibge.gov.br/geociencias/organizacao-do-territorio/estrutura-territorial/15771-evolucao-da-divisao-territorial-do-brasil.html"
@@ -299,7 +300,7 @@ export default function MapsLocationCartographersPage() {
           </li>
 
           <li>
-            IBGE. (2017). <em>Pontos extremos e fronteiras</em> [Map].{' '}
+            IBGE. (2017). <em>Pontos extremos e fronteiras</em> [Map].{" "}
             <a
               className="underline"
               href="https://educa.ibge.gov.br/images/7a12/mapas/Brasil/mapa_pontos-extremosfronteiras.pdf"
@@ -311,7 +312,7 @@ export default function MapsLocationCartographersPage() {
           </li>
 
           <li>
-            IBGE. (2023). <em>Brasil em números</em> (Vol. 31).{' '}
+            IBGE. (2023). <em>Brasil em números</em> (Vol. 31).{" "}
             <a
               className="underline"
               href="https://www.ibge.gov.br/biblioteca/visualizacao/periodicos/2/bn_2023_v31_art02.pdf"
@@ -323,13 +324,12 @@ export default function MapsLocationCartographersPage() {
           </li>
 
           <li>
-            Mendes, C. (1868).{' '}
+            Mendes, C. (1868).{" "}
             <em>
-              Atlas do imperio do Brazil: comprehendendo as respectivas
-              divisões administrativas, ecclesiasticas, eleitoraes e
-              judiciarias
-            </em>{' '}
-            [Atlas]. Library of Congress.{' '}
+              Atlas do imperio do Brazil: comprehendendo as respectivas divisões
+              administrativas, ecclesiasticas, eleitoraes e judiciarias
+            </em>{" "}
+            [Atlas]. Library of Congress.{" "}
             <a
               className="underline"
               href="https://www.loc.gov/item/map50000029/"
@@ -341,9 +341,9 @@ export default function MapsLocationCartographersPage() {
           </li>
 
           <li>
-            Mendes, C. (1868).{' '}
+            Mendes, C. (1868).{" "}
             <em>II B. Imperio do Brazil. Divisao Electoral</em> [Map]. David
-            Rumsey Map Collection.{' '}
+            Rumsey Map Collection.{" "}
             <a
               className="underline"
               href="https://www.davidrumsey.com/luna/servlet/detail/RUMSEY~8~1~305746~90076441:II-B--Imperio-do-Brazil--Divisao-El"
@@ -355,9 +355,9 @@ export default function MapsLocationCartographersPage() {
           </li>
 
           <li>
-            Ministério das Relações Exteriores. (1825).{' '}
-            <em>Tratado original entre Portugal e Brasil</em> [Treaty]. Itamaraty
-            Digital.{' '}
+            Ministério das Relações Exteriores. (1825).{" "}
+            <em>Tratado original entre Portugal e Brasil</em> [Treaty].
+            Itamaraty Digital.{" "}
             <a
               className="underline"
               href="https://atom.itamaraty.gov.br/index.php/trat-p17-m25-1825-08-29-04?sf_culture=pt"
@@ -370,7 +370,7 @@ export default function MapsLocationCartographersPage() {
 
           <li>
             Senado Federal. (n.d.). <em>Cândido Mendes</em> [Photograph and
-            biographical profile].{' '}
+            biographical profile].{" "}
             <a
               className="underline"
               href="https://www25.senado.leg.br/pt_BR/web/senadores/senador/-/perfil/1535"
@@ -382,7 +382,7 @@ export default function MapsLocationCartographersPage() {
           </li>
 
           <li>
-            OpenAI. (2026). <em>ChatGPT</em> [Large language model].{' '}
+            OpenAI. (2026). <em>ChatGPT</em> [Large language model].{" "}
             <a
               className="underline"
               href="https://chatgpt.com/"
@@ -406,5 +406,5 @@ export default function MapsLocationCartographersPage() {
         <span>Earth science project · 2026</span>
       </footer>
     </main>
-  )
+  );
 }
